@@ -1,0 +1,10 @@
+Character.class
+GoTModel.class
+addPointsController.class
+LeaderCharacter.class
+LeaderboardController.class
+Main.class
+Controller.class
+Rule.class
+Player.class
+SQLiteConnection.class

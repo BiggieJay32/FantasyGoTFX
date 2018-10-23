@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addPointsController">
+   <children>
+      <ImageView fx:id="charImg" fitHeight="206.0" fitWidth="367.0" layoutX="231.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playerImg" fitHeight="206.0" fitWidth="367.0" layoutX="231.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="102.0" layoutY="31.0" text="Rules" />
+      <TableView fx:id="ruleTable" layoutX="1.0" prefHeight="409.0" prefWidth="233.0">
+        <columns>
+            <TableColumn fx:id="numRuleCol" prefWidth="59.0" text="Number" />
+          <TableColumn fx:id="ruleCol" prefWidth="171.0" text="Rules" />
+        </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TableView>
+      <TableView fx:id="characterTable" layoutX="600.0" prefHeight="409.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="numCharacterCol" minWidth="0.0" prefWidth="53.0" text="Number" />
+            <TableColumn fx:id="characterCol" prefWidth="144.0" text="Characters" />
+         </columns>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TableView>
+      <Label layoutX="7.0" layoutY="415.0" text="Rule Number:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="7.0" layoutY="445.0" text="Character Number:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="submit" layoutX="360.0" layoutY="439.0" mnemonicParsing="false" onAction="#handleSubmitButton" text="Submit">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Label fx:id="isConnected" layoutX="7.0" layoutY="478.0" text="Status" />
+      <Label fx:id="ruleNum" layoutX="131.0" layoutY="415.0" prefHeight="27.0" prefWidth="33.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="charNum" layoutX="172.0" layoutY="445.0" prefHeight="27.0" prefWidth="29.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
